@@ -55,7 +55,7 @@ public class ClassProductoImp implements IProducto {
         EntityManager em=fabr.createEntityManager();
         //iniciamos la transaccion
         em.getTransaction().begin();
-        //recuperamos los clientes  de la base de datos
+        //recuperamos los productos  de la base de datos
         //***********utilizando jpql
         List<TblProductocl2> listadoproducto=em.createQuery("select c from TblProductocl2 c",TblProductocl2.class).getResultList();
         //confirmamos la transaccion

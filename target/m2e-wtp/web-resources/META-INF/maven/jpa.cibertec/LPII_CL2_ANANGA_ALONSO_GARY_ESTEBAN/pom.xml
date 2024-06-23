@@ -50,12 +50,6 @@
 	    <artifactId>jstl</artifactId>
 	    <version>1.2</version>
 	</dependency>
-	<dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <version>1.18.26</version> <!-- Usa la versión más reciente disponible -->
-    <scope>provided</scope>
-</dependency>
   </dependencies>
   <build>
     <finalName>LPII_CL2_ANANGA_ALONSO_GARY_ESTEBAN</finalName>
