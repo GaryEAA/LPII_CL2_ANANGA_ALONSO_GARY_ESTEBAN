@@ -8,18 +8,29 @@
 </head>
 <body bgcolor="#c5dec9">
 <h2 align="center">Login Usuario</h2>
+<div style="text-align: center;">
+<img src="usuario.png"  width="100px" height="100px">
+</div>
 <form action="ControladorUsuario" method="post">
-	<label for="username">Usuario: </label>
-	<input type="text" id="username" name="username" required><br><br>
-	
-	<label for="password">Contraseña: </label>
-	<input type="password" id="password" name="password" required><br><br>
-	
+<table border="2" align="center">
+<tr>
+	<td><label for="username">Usuario: </label></td>
+	<td><input type="text" id="username" name="username" required></td>
+</tr>
+<tr>	
+	<td><label for="password">Contraseña: </label></td>
+	<td><input type="password" id="password" name="password" required></td>
+</tr>
+<tr>	
+	<td colspan="2" align="center">
 	<input type="submit" value="Iniciar Sesión">
+	</td>
+</tr>
+</table>
 </form>
 <% String mensajeError = (String) request.getAttribute("mensaje"); %>
 <% if(mensajeError != null && !mensajeError.isEmpty()) { %>
-<p style="color: red;"><%= mensajeError %></p>
+<p align="center" style="color: red;"><%= mensajeError %></p>
 <% } %>
 </body>
 </html>
